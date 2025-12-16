@@ -1,24 +1,25 @@
 class Projects {
   constructor() {
     this.title = 'My Projects';
+    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
     this.projects = [
       {
         name: 'Rainydays',
         description: 'A cool web application originally built with only HTML and CSS, but later enhanced with vanilla JavaScript',
         tech: ['JavaScript', 'HTML', 'CSS'],
-        image: 'src/images/rainyday.png'
+        image: `${basePath}/src/images/rainyday.png`
       },
       {
         name: 'Community Museum',
         description: 'A dynamic web app displaying museum exhibits, this project was our Semester Project at Noroff School of Technology for the first semester. Originally built with only HTML and CSS, later enhanced with JavaScript to create the ticket booking system.',
         tech: ['JavaScript', 'HTML', 'CSS'],
-        image: 'src/images/museum.png'
+        image: `${basePath}/src/images/museum.png`
       },
       {
         name: 'Rainydays, JavaScript 1 Project',
         description: 'Our first JavaScript project, uses and API to fetch the jackets and has a shopping cart functionality.',
         tech: ['API', 'JavaScript', 'HTML', 'CSS'],
-        image: 'src/images/rainyday.png'
+        image: `${basePath}/src/images/rainyday.png`
       }
     ];
   }

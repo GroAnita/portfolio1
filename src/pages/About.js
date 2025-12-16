@@ -6,10 +6,11 @@ class About {
   async render() {
     // Attach event listeners after render
     setTimeout(() => this.attachModalListeners(), 0);
+    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
 
     return `
       <div class="page about-page">
-        <div class="about-image"><img src="src/images/megibunadlite.jpg" alt="About Me"></div>
+        <div class="about-image"><img src="${basePath}/src/images/megibunadlite.jpg" alt="About Me"></div>
        
         <div class="content">
          <h1>${this.title}</h1>
@@ -58,16 +59,17 @@ class About {
       button.addEventListener('click', (e) => {
         e.preventDefault();
         const pdfType = button.getAttribute('data-pdf');
+        const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
         
         if (pdfType === 'cv') {
-          pdfViewer.src = 'src/documents/cv.pdf';
+          pdfViewer.src = `${basePath}/src/documents/cv.pdf`;
           pdfTitle.textContent = 'My CV';
-          pdfDownload.href = 'src/documents/cv.pdf';
+          pdfDownload.href = `${basePath}/src/documents/cv.pdf`;
           pdfDownload.download = 'CV.pdf';
         } else if (pdfType === 'coverletter') {
-          pdfViewer.src = 'src/documents/coverletter.pdf';
+          pdfViewer.src = `${basePath}/src/documents/coverletter.pdf`;
           pdfTitle.textContent = 'Cover Letter';
-          pdfDownload.href = 'src/documents/coverletter.pdf';
+          pdfDownload.href = `${basePath}/src/documents/coverletter.pdf`;
           pdfDownload.download = 'CoverLetter.pdf';
         }
         

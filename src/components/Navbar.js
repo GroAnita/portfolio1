@@ -9,13 +9,14 @@ class Navbar {
   }
 
   render() {
+    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
     return `
       <nav class="navbar">
         <div class="nav-brand">
           <a href="/" data-link>Portfolio</a>
           
         </div>
-        <div class="logo-icon"><img src="src/images/horseheadlogowhite.png" alt="Logo"></div>
+        <div class="logo-icon"><img src="${basePath}/src/images/horseheadlogowhite.png" alt="Logo"></div>
         <ul class="nav-links">
           ${this.links.map(link => `
             <li>
