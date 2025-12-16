@@ -6,7 +6,7 @@ class About {
   async render() {
     // Attach event listeners after render
     setTimeout(() => this.attachModalListeners(), 0);
-    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
+    const basePath = window.location.hostname.includes('github.io') ? '/portfolio1' : '';
 
     return `
       <div class="page about-page">

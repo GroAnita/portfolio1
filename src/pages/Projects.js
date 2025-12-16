@@ -24,7 +24,7 @@ class Projects {
   }
 
   async render() {
-    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
+    const basePath = window.location.hostname.includes('github.io') ? '/portfolio1' : '';
     return `
       <div class="page projects-page">
         <h1>${this.title}</h1>
