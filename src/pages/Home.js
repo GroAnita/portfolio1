@@ -40,7 +40,10 @@ class Home {
           
           // Navigate after morph animation completes
           setTimeout(() => {
-            window.history.pushState(null, null, route);
+            // Add base path if on GitHub Pages
+            const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
+            const fullPath = basePath + route;
+            window.history.pushState(null, null, fullPath);
             window.dispatchEvent(new Event('popstate'));
           }, 600);
         }
