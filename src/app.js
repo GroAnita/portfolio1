@@ -1,5 +1,5 @@
-import Router, { routes } from './router.js';
-import Navbar from './components/Navbar.js';
+import Router, { routes } from './router.js?v=2';
+import Navbar from './components/Navbar.js?v=2';
 
 class App {
   constructor() {
