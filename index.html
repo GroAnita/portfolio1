@@ -13,16 +13,20 @@
           return s.replace(/~and~/g, '&')
         }).join('?');
         window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
+          l.pathname + decoded + l.hash
         );
       }
     }(window.location))
   </script>
   
-  <link rel="stylesheet" href="src/styles/main.css">
-  <link rel="stylesheet" href="src/styles/home.css">
-  <link rel="stylesheet" href="src/styles/projects.css">
-  <link rel="stylesheet" href="src/styles/about.css">
+  <script>
+    // Set base path for assets
+    var basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1/' : './';
+    document.write('<link rel="stylesheet" href="' + basePath + 'src/styles/main.css">');
+    document.write('<link rel="stylesheet" href="' + basePath + 'src/styles/home.css">');
+    document.write('<link rel="stylesheet" href="' + basePath + 'src/styles/projects.css">');
+    document.write('<link rel="stylesheet" href="' + basePath + 'src/styles/about.css">');
+  </script>
 </head>
 <body>
   <!-- Navigation Bar -->
