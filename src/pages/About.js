@@ -6,11 +6,11 @@ class About {
   async render() {
     // Attach event listeners after render
     setTimeout(() => this.attachModalListeners(), 0);
-   // const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
+    const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
 
     return `
       <div class="page about-page">
-        <div class="about-image"><img src="../src/images/megibunadlite.jpg" alt="About Me"></div>
+        <div class="about-image"><img src="${basePath}/src/images/megibunadlite.jpg" alt="About Me"></div>
        
         <div class="content">
          <h1>${this.title}</h1>
