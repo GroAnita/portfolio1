@@ -29,12 +29,20 @@ class Router {
 
   async navigateTo(url) {
     // Update browser history
-    history.pushState(null, null, url);
+    // Extract just the pathname from the URL to avoid issues
+    const urlObj = new URL(url, window.location.origin);
+    history.pushState(null, null, urlObj.pathname);
     await this.handleRoute();
   }
 
   async handleRoute() {
-    const path = window.location.pathname;
+    let path = window.location.pathname;
+    
+    // Handle GitHub Pages base path
+    const basePath = '/portfolio1';
+    if (path.startsWith(basePath)) {
+      path = path.slice(basePath.length) || '/';
+    }
     
     // Find matching route
     let route = this.routes.find(r => r.path === path);
