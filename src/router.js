@@ -1,7 +1,7 @@
-import Home from './pages/Home.js?v=3';
-import About from './pages/About.js?v=3';
-import Contact from './pages/Contact.js?v=3';
-import Projects from './pages/Projects.js?v=3';
+import Home from './pages/Home.js?v=4';
+import About from './pages/About.js?v=4';
+import Contact from './pages/Contact.js?v=4';
+import Projects from './pages/Projects.js?v=4';
 
 // Router class for handling SPA navigation
 class Router {
