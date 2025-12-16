@@ -10,7 +10,7 @@ class About {
 
     return `
       <div class="page about-page">
-        <div class="about-image"><img src="${basePath}/src/images/megibunadlite.jpg" alt="About Me"></div>
+        <div class="about-image"><img src="./src/images/megibunadlite.jpg" alt="About Me"></div>
        
         <div class="content">
          <h1>${this.title}</h1>
