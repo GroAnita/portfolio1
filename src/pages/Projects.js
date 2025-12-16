@@ -12,7 +12,7 @@ class Projects {
       },
       {
         name: 'Community Museum',
-        description: 'A dynamic web app displaying museum exhibits, this project was our Semester Project at Noroff School of Technology for the first semester. Originally built with only HTML and CSS, later enhanced with JavaScript to create the ticket booking system.',
+        description: 'A dynamic web app displaying museum exhibits, this project was our Semester Project at Noroff School of Technology for the first semester. Originally built with only HTML and CSS, later enhanced with JavaScript to create the ticket booking.',
         tech: ['JavaScript', 'HTML', 'CSS', 'Figma'],
         image: '/src/images/museum.png',
         liveUrl: 'https://groanita.github.io/semester-project-1/',
@@ -44,8 +44,8 @@ class Projects {
                 ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
               </div>
               <div class="project-buttons">
-                <a href="${project.liveUrl}" class="btn btn-primary" target="_blank">View Live</a>
-                <a href="${project.githubUrl}" class="btn btn-secondary" target="_blank">GitHub</a>
+                <a href="${project.liveUrl}" class="btn btn-primary" target="_blank"><i class="fa-solid fa-link"></i>View Demo</a>
+                <a href="${project.githubUrl}" class="btn btn-secondary" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
                 </div>
             </div>
           `).join('')}
