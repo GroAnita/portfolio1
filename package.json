@@ -1,0 +1,22 @@
+{
+  "name": "portfolio1",
+  "version": "1.0.0",
+  "description": "A Single Page Application portfolio with custom routing",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -s",
+    "start": "npx serve . -s"
+  },
+  "keywords": [
+    "spa",
+    "portfolio",
+    "vanilla-js",
+    "router"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
