@@ -50,3 +50,80 @@ box-shadow: 0px 0px 105px 5px rgba(41,169,255,0.9);
     transform: translateY(-20px);
   }
 }
+
+/* Mobile Tiles Navigation */
+.mobile-tiles {
+  display: none; /* Hidden by default (desktop) */
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.nav-tile {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: slideInUp 0.6s ease-out backwards;
+}
+
+.nav-tile:nth-child(1) { animation-delay: 0.1s; }
+.nav-tile:nth-child(2) { animation-delay: 0.2s; }
+.nav-tile:nth-child(3) { animation-delay: 0.3s; }
+
+.nav-tile:active {
+  transform: scale(0.98);
+}
+
+.tile-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-tile h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.nav-tile p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.nav-tile.tile-fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Tile color variations */
+.tile-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.tile-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.tile-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive: Show tiles on mobile, balls on desktop */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-tiles {
+    display: flex;
+  }
+}

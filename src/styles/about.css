@@ -98,4 +98,8 @@
   .pdf-modal-header h3 {
     font-size: 1.2rem;
   }
+  .page.about-page {
+    display:flex;
+    flex-direction: column;
+  }
 }
