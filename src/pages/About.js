@@ -59,7 +59,7 @@ class About {
       button.addEventListener('click', (e) => {
         e.preventDefault();
         const pdfType = button.getAttribute('data-pdf');
-        const basePath = window.location.pathname.includes('/portfolio1') ? '/portfolio1' : '';
+        const basePath = window.location.hostname.includes('github.io') ? '/portfolio1' : '';
         
         if (pdfType === 'cv') {
           pdfViewer.src = `${basePath}/src/documents/cv.pdf`;
