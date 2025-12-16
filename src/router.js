@@ -2,7 +2,6 @@ import Home from './pages/Home.js?v=2';
 import About from './pages/About.js?v=2';
 import Contact from './pages/Contact.js?v=2';
 import Projects from './pages/Projects.js?v=2';
-import NotFound from './pages/NotFound.js?v=2';
 
 // Router class for handling SPA navigation
 class Router {
@@ -47,9 +46,9 @@ class Router {
     // Find matching route
     let route = this.routes.find(r => r.path === path);
     
-    // Use 404 route if no match found
+    // Default to home page if no match found
     if (!route) {
-      route = this.routes.find(r => r.path === '*') || this.routes[0];
+      route = this.routes[0];
     }
 
     this.currentRoute = route;
@@ -71,8 +70,7 @@ const routes = [
   { path: '/', view: Home },
   { path: '/about', view: About },
   { path: '/contact', view: Contact },
-  { path: '/projects', view: Projects },
-  { path: '*', view: NotFound }
+  { path: '/projects', view: Projects }
 ];
 
 export default Router;

@@ -4,7 +4,7 @@ A Single Page Application built with vanilla JavaScript and a custom router.
 
 ## Project Structure
 
-```
+```text
 portfolio1/
 ├── index.html          # Entry point
 ├── package.json        # Project configuration
@@ -37,11 +37,13 @@ portfolio1/
 ## Getting Started
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
 
 2. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -51,6 +53,7 @@ portfolio1/
 ## How It Works
 
 The application uses a custom router (`router.js`) that:
+
 - Intercepts link clicks with `data-link` attribute
 - Updates browser history without page reload
 - Dynamically loads and renders page components
