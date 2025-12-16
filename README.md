@@ -18,7 +18,7 @@ portfolio1/
 │   │   ├── About.js
 │   │   ├── Projects.js
 │   │   ├── Contact.js
-│   │   └── NotFound.js
+│   │  
 │   └── styles/        # CSS files
 │       └── main.css
 └── public/            # Static assets
