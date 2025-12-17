@@ -1,5 +1,6 @@
 # Portfolio SPA
-
+My personal Portfolio page.
+Checkout my previous project and get in thouch.
 A Single Page Application built with vanilla JavaScript and a custom router.
 
 ## Project Structure
@@ -67,7 +68,6 @@ All routes are defined in `router.js` and initialized in `app.js`.
 - `/about` - About page
 - `/projects` - Projects page
 - `/contact` - Contact page
-- `*` - 404 page (fallback for unknown routes)
 
 ## Technologies
 
