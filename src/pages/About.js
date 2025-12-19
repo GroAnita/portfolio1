@@ -14,7 +14,11 @@ class About {
        
         <div class="content">
          <h1>${this.title}</h1>
-          <p>Hello! I'm a web developer passionate about creating modern, responsive web applications.</p>
+          <p>Hi, I’m Gro Anita — a front-end development student with a passion for creating clean, intuitive, and user-friendly digital experiences. I enjoy combining structure with creativity, and I love the moment where design and logic meet.</p>
+          <p>My background is quite diverse: I’ve worked independently in customer-facing roles, led a sports club for many years, and even organized large international equestrian competitions (FEI). These experiences taught me leadership, communication, problem-solving, and how to stay calm when things get complicated — skills that translate extremely well to project management and front-end development. </p>
+          <p>I’m currently studying front-end development at Noroff, where I’m building projects with HTML, CSS, JavaScript, and modern workflows. I take pride in writing clean code, learning new techniques, and improving with every project. </p>
+          <p>I’m detail-oriented, driven, and always curious. Whether I’m debugging a stubborn script, designing a layout, or planning a project, I genuinely enjoy the process of turning ideas into something real. </p>
+
           <h2>Skills</h2>
           <ul>
             <li>JavaScript / ES6+</li>
