@@ -266,6 +266,9 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.contact-page {
+ height: 130vh;
+}
 
 .contact-info {
   display: grid;
