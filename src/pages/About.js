@@ -12,7 +12,7 @@ class About {
       <div class="page about-page">
         <div class="about-image"><img src="${basePath}/src/images/megibunadlite.jpg" alt="About Me"></div>
        
-        <div class="content">
+        <div class="content about-content">
          <h1>${this.title}</h1>
           <p>Hi, I’m Gro Anita — a front-end development student with a passion for creating clean, intuitive, and user-friendly digital experiences. I enjoy combining structure with creativity, and I love the moment where design and logic meet.</p>
           <p>My background is quite diverse: I’ve worked independently in customer-facing roles, led a sports club for many years, and even organized large international equestrian competitions (FEI). These experiences taught me leadership, communication, problem-solving, and how to stay calm when things get complicated — skills that translate extremely well to project management and front-end development. </p>
@@ -26,6 +26,10 @@ class About {
             <li>Single Page Applications</li>
             <li>Responsive Design</li>
             <li>Version Control (Git)</li>
+            <li>Figma</li>
+            <li>Problem Solving</li>
+            <li>Communication & Teamwork</li>
+            <li>Project Management</li>
           </ul>
           <h2>Experience</h2>
           <p>Building web applications with focus on user experience and performance.</p>

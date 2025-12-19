@@ -25,7 +25,9 @@ class Contact {
           </div>
           <div class="contact-form">
             <h2>Send a Message</h2>
-            <form id="contactForm">
+            <form id="contactForm"
+             action="https://formspree.io/f/xjgbkeaj"
+  method="POST">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>

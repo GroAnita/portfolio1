@@ -156,8 +156,8 @@ body {
 
 /* About Page */
 .about-image {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 20%;
   object-fit: contain;
   margin: 0 auto 1.5rem auto;
@@ -166,8 +166,9 @@ body {
 
 .about-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    height: 130vh;
 }
 
 .about-image img {
@@ -383,5 +384,15 @@ body {
     height: 100px;
     margin-left: 0;
   }
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300vh;
+}
+.contact-page {
+ height: 180vh;
+}
 
 }
