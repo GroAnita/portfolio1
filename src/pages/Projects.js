@@ -6,7 +6,7 @@ class Projects {
         name: 'Rainydays',
         description: 'A web application originally built with only HTML and CSS, but later enhanced with vanilla JavaScript. This was our first school project, and it also included designing the layout in Figma beforehand.',
         tech: ['JavaScript', 'HTML', 'CSS', 'Figma'],
-        image: '/src/images/rainyday.png',
+        image: '/src/images/rainyday.jpg',
         liveUrl: 'https://groanita.github.io/html-Css-GroAnitaBr-then1/',
         githubUrl: 'https://github.com/GroAnita/html-Css-GroAnitaBr-then1'
       },
@@ -14,7 +14,7 @@ class Projects {
         name: 'Community Museum',
         description: 'A dynamic web app displaying museum exhibits, this project was our Semester Project at Noroff School of Technology for the first semester. Originally built with only HTML and CSS, later enhanced with JavaScript to create the ticket booking.',
         tech: ['JavaScript', 'HTML', 'CSS', 'Figma'],
-        image: '/src/images/museum.png',
+        image: '/src/images/museum.jpg',
         liveUrl: 'https://groanita.github.io/SP1-Gro-Anita-Br-then/',
         githubUrl: 'https://github.com/GroAnita/SP1-Gro-Anita-Br-then'
       },
@@ -22,7 +22,7 @@ class Projects {
         name: 'Rainydays, JavaScript 1 Project',
         description: 'Our first JavaScript project, uses and API to fetch the jackets and has a shopping cart functionality. This was our first school project working with an API, and it was a fun challenge.',
         tech: ['API', 'JavaScript', 'HTML', 'CSS', 'Figma'],
-        image: '/src/images/rainydaysjs.png',
+        image: '/src/images/rainydaysjs.jpg',
         liveUrl: 'https://groanita.github.io/JS1_140925_GroanitaBr-then/',
         githubUrl: 'https://github.com/GroAnita/JS1_140925_GroanitaBr-then'
       }
