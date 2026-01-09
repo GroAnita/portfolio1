@@ -6,6 +6,9 @@ A Single Page Application built with vanilla JavaScript and a custom router.
 
 Link to live demo : https://groanita.github.io/portfolio1/
 
+<img width="1601" height="621" alt="Screenshot 2026-01-09 at 11 19 17" src="https://github.com/user-attachments/assets/7f6630a9-7ef5-49a4-8957-64f43237b8dc" />
+
+
 ## Project Structure
 
 ```text
