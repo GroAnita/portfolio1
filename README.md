@@ -4,6 +4,8 @@ My personal Portfolio page.
 Checkout my previous project and get in thouch.
 A Single Page Application built with vanilla JavaScript and a custom router.
 
+Link to live demo : https://groanita.github.io/portfolio1/
+
 ## Project Structure
 
 ```text
